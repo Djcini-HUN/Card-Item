@@ -43,6 +43,7 @@ body{
     gap: clamp(.55rem,.55rem,.55vw);
     width: 60vw;
     height: 100%;
+    padding-inline: clamp(.8rem,.8rem,.8vw);
     margin-top: clamp(.54rem,.54rem,.54vw);
     margin-left: clamp(1.54rem,1.54rem,1.54vw);
 }

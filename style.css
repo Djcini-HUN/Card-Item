@@ -85,7 +85,7 @@ body{
     font-size: clamp(1rem,1rem,1vw);
     font-weight: 500;
     width: 100%;
-    padding-block:clamp(.85rem,.85rem,.85vw);
+    padding-block:clamp(.95rem,.95rem,.95vw);
     border-radius: .5em;
     text-decoration: none;
     border: none;
@@ -95,7 +95,7 @@ body{
 }
 #main_Addtocard:hover{
     transition: all .35s;
-    transform:scale(101%);
+    transform:scale(103%);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .greencircle{
@@ -163,7 +163,6 @@ body{
         width: 100%;
         flex-direction: column;
         padding: 15px;
-        
     }
     .card-left{
         width: 100%;
@@ -171,7 +170,8 @@ body{
         align-items: center;
     }
     .card-left>img{
-        
+        width: 70%;
+        height: auto;
     }
     .card-right{
         width: 100%;

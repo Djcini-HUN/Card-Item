@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100vw;
+    background-color: #eef2f9;
+}
+.card-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 55vw;
+    height: fit-content;
+    border-radius: 1em;
+    padding: clamp(1rem,3rem,3vw);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40vw;
+    height: 100%;
+}
+.card-left>img{
+    max-width: clamp(24rem,24rem,24vw);
+}
+.card-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: clamp(.55rem,.55rem,.55vw);
+    width: 60vw;
+    height: 100%;
+    margin-top: clamp(.54rem,.54rem,.54vw);
+    margin-left: clamp(1.54rem,1.54rem,1.54vw);
+}
+.freeshipping{
+    background-color: #1a1948;
+    color: #ffffff;
+    padding: clamp(0.3rem,0.3rem,0.3vw);
+    padding-inline: clamp(0.6rem,0.6rem,0.6vw);
+    border-radius: 1em;
+    font-size: clamp(.8rem,.8rem,.8vw);
+    font-weight: 400;
+    margin-block: clamp(.4rem,.4rem,.4vw);
+}
+.product{
+    color: #1a1948;
+    font-size: clamp(1.4rem,1.4rem,1.4vw);
+    font-weight: 600;
+    margin-bottom: clamp(1rem,1rem,1vw);
+}
+.old_Price{
+    font-size: clamp(.8rem,.8rem,.8vw);
+    font-weight: 400;
+    color: #1a1948;
+    text-decoration:line-through;
+}
+.new_Price{
+    font-size: clamp(1.8rem,1.8rem,1.8vw);
+    font-weight: 800;
+    color: #1a1948;
+}
+.price-danger{
+    font-size: clamp(.75rem,.75rem,.75vw);
+    font-weight: 300;
+    color: #8a8aa1;
+    margin-bottom: clamp(1.2rem,1.2rem,1.2vw);
+}
+#main_Addtocard{
+    background-color: #4787e9;
+    color: #ffffff;
+    font-size: clamp(1rem,1rem,1vw);
+    font-weight: 500;
+    width: 100%;
+    padding-block:clamp(.85rem,.85rem,.85vw);
+    border-radius: .5em;
+    text-decoration: none;
+    border: none;
+    border-bottom: 5px solid #1c57ee;
+    margin-bottom: clamp(.4rem,.4rem,.4vw);
+    cursor: pointer;
+}
+#main_Addtocard:hover{
+    transition: all .35s;
+    transform:scale(101%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.greencircle{
+    background-color: #00d98b;
+    border-radius: 50%;
+    width: .7rem;
+    height: .7rem;
+    margin-right: clamp(.4rem,.4rem,.4vw);
+}
+.stock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(.8rem,.8rem,.8vw);
+    font-weight: 400;
+    color: #1a1948;
+    margin-bottom: clamp(1.4rem,1.4rem,1.4vw);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: clamp(1rem,1rem,1vw);
+}
+.buttons > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1948;
+    background-color: #ffffff;
+    border: 3px solid #8a8aa1;
+    padding-block:clamp(.85rem,.85rem,.85vw);
+    border-radius: .5em;
+    width: 50%;
+    font-size: clamp(.8rem,1rem,1vw);
+    font-weight: 500;
+    cursor: pointer;
+}
+.buttons>button>img{
+    margin-right: clamp(.3rem,.3rem,.3vw);
+}
+.buttons>button:hover{
+    border:3px solid #1a1948;
+}
+
+@media  (max-width: 1400px) {
+    .card-container{
+        width: 70vw;
+    }
+}
+@media  (max-width:900px){
+    body{
+        background-color: #ffffff;
+    }
+    .card-container{
+        width: 100vw;
+        border-radius: none;
+        box-shadow: none;
+    }
+}
+
+@media  (max-width:600px){
+    .card-container{
+        width: 100%;
+        flex-direction: column;
+        padding: 15px;
+        
+    }
+    .card-left{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+    }
+    .card-left>img{
+        
+    }
+    .card-right{
+        width: 100%;
+        margin-left: 0;
+    }
+}

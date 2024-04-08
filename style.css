@@ -177,4 +177,9 @@ body{
         width: 100%;
         margin-left: 0;
     }
+    #main_Addtocard:hover{
+        transition: all .35s;
+        transform:scale(97%);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
 }

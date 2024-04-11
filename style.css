@@ -19,7 +19,7 @@ body{
     align-items: flex-start;
     justify-content: center;
     background-color: #ffffff;
-    width: 55vw;
+    width: clamp(40vw,45vw,47vw);
     height: fit-content;
     border-radius: 1em;
     padding: clamp(1rem,3rem,3vw);

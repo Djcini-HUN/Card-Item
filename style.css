@@ -70,7 +70,7 @@ body{
     text-decoration:line-through;
 }
 .new_Price{
-    font-size: clamp(1.8rem,1.8rem,1.8vw);
+    font-size: clamp(2rem,2rem,3vw);
     font-weight: 800;
     color: #1a1948;
 }
